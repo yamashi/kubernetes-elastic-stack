@@ -112,12 +112,12 @@ metadata:
     app: elasticsearch
     stack: logging
 spec:
-  # storageClassName: standard
+  storageClassName: gluster-heketi
   accessModes:
   - ReadWriteOnce
   resources:
     requests:
-      storage: 1G
+      storage: 100G
 ---
 ---
 apiVersion: rbac.authorization.k8s.io/v1beta1
